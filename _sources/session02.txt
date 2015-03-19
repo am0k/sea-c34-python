@@ -22,6 +22,21 @@ Review of Previous Session
   * Expressions
   * Intro to functions
 
+Clarifications
+==============
+
+* Python Development Accelerator
+* Blank lines don't always end a block
+
+Review of Previous Session
+--------------------------
+
+.. rst-class:: build
+
+  * Values and Types
+  * Expressions
+  * Intro to functions
+
 Homework Review
 ---------------
 
@@ -29,6 +44,24 @@ Homework Review
 
 Any questions that are nagging?
 
+Today's Plan
+================
+
+* Github Upstream
+* Functions
+* Booleans
+* Modules
+
+For Each Section
+----------------
+
+* Read through the puzzle for that section.
+* Pick a partner. Describe what your goal is.
+* Read through the section. Try typing any code you see in `ipython` or `python`
+* Come up with three questions as you are reading with your partner.
+* We'll come around and help you.
+* We'll regroup and you'll teach me the slides.
+* We'll solve the puzzle together.
 
 Git Work
 ========
@@ -37,6 +70,20 @@ Git Work
 
 Let's get to know your fellow students!
 
+Git Work Puzzle
+------------------------
+We want to pull your classmates "Gitting to Know You"
+introductions from the (upstream) class repo.
+
+Remember, do these steps:
+
+* Read through the puzzle for that section.
+* Pick a partner, describe what your goal is.
+* Read through the slides. Try typing any code you see in `ipython` or `python`
+* Come up with three questions as you are reading with your partner.
+* We'll come around and help you.
+* We'll regroup and you'll teach me the slides.
+* We'll solve the puzzle together.
 
 Working with an Upstream
 ------------------------
@@ -65,8 +112,8 @@ Cloned repositories get an *origin* remote for free:
 .. code-block:: bash
 
     $ git remote -v
-    origin  https://github.com/cewing/sea-c28-students.git (fetch)
-    origin  https://github.com/cewing/sea-c28-students.git (push)
+    origin  https://github.com/cewing/sea-c34-python.git (fetch)
+    origin  https://github.com/cewing/sea-c34-python.git (push)
 
 This shows that the local repo on my machine *originated* from the one in my gitHub account (the one it was cloned from)
 
@@ -83,13 +130,13 @@ to the original copy of the material in the ``codefellows`` account.
 
 .. code-block:: bash
 
-    $ git remote add upstream https://github.com/codefellows/sea-c28-students.git
+    $ git remote add upstream https://github.com/codefellows/sea-c34-python.git
 
     $ git remote -v
-    origin  https://github.com/cewing/sea-c28-students.git (fetch)
-    origin  https://github.com/cewing/sea-c28-students.git (push)
-    upstream  https://github.com/codefellows/sea-c28-students.git (fetch)
-    upstream  https://github.com/codefellows/sea-c28-students.git (push)
+    origin  https://github.com/cewing/sea-c34-python.git (fetch)
+    origin  https://github.com/cewing/sea-c34-python.git (push)
+    upstream  https://github.com/codefellows/sea-c34-python.git (fetch)
+    upstream  https://github.com/codefellows/sea-c34-python.git (push)
 
 .. nextslide:: Fetching Everything.
 
@@ -136,7 +183,7 @@ Then, fetch the upstream master branch and merge it into your master:
 .. code-block:: bash
 
     $ git fetch upstream master
-    From https://github.com/codefellows/sea-c28-students.git
+    From https://github.com/codefellows/sea-c34-python.git
      * branch            master     -> FETCH_HEAD
 
     $ git merge upstream/master
@@ -185,21 +232,32 @@ You can incorporate this into your daily workflow: ::
     $ git push
     [make a pull request]
 
-Quick Intro to Basics
+Git Work Puzzle Solved!
+------------------------
+We wanted to pull your classmates "Gitting to Know You"
+introductions from the (upstream) class repo.
+
+When you make that happen, congratulations! Find your partner's
+introduction and read them to each other.
+
+Some Needed Plumbing
 =====================
 
 .. rst-class:: center large
 
-Because there's a few things you just gotta have
+Because there's a few things you just gotta have:
 
-Basics
-------
+* collections
+* looping
 
-It turns out you can't really do much at all without at least a container type,
+Collections and Looping
+-----------------
+
+It turns out you can't really do much at all without at least a collection (container) type,
 conditionals and looping...
 
 
-.. nextslide:: if
+.. nextslide:: Review: if
 
 ``if`` and ``elif`` allow you to make decisions:
 
@@ -215,7 +273,7 @@ conditionals and looping...
         print(u'that was unexpected')
 
 
-.. nextslide:: if
+.. nextslide:: Test Your Knowledge: if
 
 What's the difference between these two:
 
@@ -231,6 +289,7 @@ What's the difference between these two:
     if b:
         print(u'b')
 
+Try it at http://pythontutor.com
 
 .. nextslide:: switch?
 
@@ -307,6 +366,7 @@ When you need to do something to everything in a sequence
     4
     5
 
+Try it at http://pythontutor.com
 
 .. nextslide:: range() and for
 
@@ -324,6 +384,7 @@ Use it when you need to do something a set number of times
        ....:
     * * * * * *
 
+Try it at http://pythontutor.com
 
 .. nextslide:: Intricacies
 
@@ -336,6 +397,32 @@ We'll get to those over the next couple of classes
 
 Functions
 =========
+
+Functions Puzzle
+---------
+
+In your local repo, after you've updated from upstream,
+go to `session02` and find the file `stackoverflow.py`.
+
+In it, you will find a function that calls itself.
+
+* What problems does this cause?
+* Why do you think the problem occurs?
+* How can you count the number of times a function can call itself?
+* Modify the program to implement your solution.
+
+.. nextslide::
+
+Remember, Do These Steps
+
+* Read through the puzzle for that section.
+* Pick a partner. Describe what your goal is.
+* Read through the section `Functions`. Try typing any code you see in `ipython` or `python`
+* Come up with three questions as you are reading with your partner.
+* We'll come around and help you.
+* We'll regroup and you'll teach me the slides.
+* We'll solve the puzzle together.
+
 
 Review
 ------
@@ -673,30 +760,52 @@ We can use a recursive function nicely to model this mathematical function
 
     [demo]
 
+Functions Puzzle Solved!
+------------------------
 
-In-Class Lab:
-=============
+Now it's time to solve the puzzle. Remember:
 
-.. rst-class:: center large
+In your local repo, after you've updated from upstream,
+go to `session02` and find the file `stackoverflow.py`.
 
-Fun With Functions
+In it, you will find a function that calls itself.
 
-Exercises
----------
+* What problems does this cause?
+* Why do you think the problem occurs?
+* How can you count the number of times a function can call itself?
+* Modify the program to implement your solution.
 
-Try your hand at writing a function that computes the distance between two
-points::
-
-    dist = sqrt( (x1 - x2)**2 + (y1 - y2)**2 )
-
-Experiment with ``locals`` by adding this statement to the function you just
-wrote:::
-
-    print(locals())
 
 
 Boolean Expressions
 ===================
+
+Boolean Puzzle
+---------
+
+* Look up the ``%``  operator. What do these do?
+
+  * ``10 % 7 == 3``
+  * ``14 % 7 == 0``
+
+* Write a program that prints the numbers from 1 to 100 inclusive. But for
+  multiples of three print "Fizz" instead of the number and for the multiples
+  of five print "Buzz". For numbers which are multiples of both three and five
+  print "FizzBuzz" instead.
+* If you finish that, try your hand at writing solutions to one or more of the
+  problems in :download:`codingbat.rst <../code/session02/codingbat.rst>`
+
+.. nextslide::
+
+Remember, Do These Steps
+
+* Read through the puzzle for that section.
+* Pick a partner. Describe what your goal is.
+* Read through the section `Booleans`. Try typing any code you see in `ipython` or `python`
+* Come up with three questions as you are reading with your partner.
+* We'll come around and help you.
+* We'll regroup and you'll teach me the slides.
+* We'll solve the puzzle together.
 
 Truthiness
 ----------
@@ -925,15 +1034,10 @@ And you can even do math with them (though it's a bit odd to do so):
     (demo)
 
 
-In-Class Lab:
-=============
+Boolean Puzzle Solved
+---------------------
 
-.. rst-class:: center large
-
-Better With Booleans
-
-Exercises
----------
+Remember our puzzle:
 
 * Look up the ``%``  operator. What do these do?
 
@@ -947,13 +1051,63 @@ Exercises
 * If you finish that, try your hand at writing solutions to one or more of the
   problems in :download:`codingbat.rst <../code/session02/codingbat.rst>`
 
+Volunteer to upload your solution to Slack!
+
 
 Code Structure, Modules, and Namespaces
 =======================================
 
 .. rst-class:: center large
 
-How to get what you want when you want it.
+Scopes within scopes, attributes within attributes
+
+Module Puzzle
+--------------
+
+Write a module (file) called `mystery.py` with a function
+inside that solves one of the CodingBat exercises from
+before:
+
+:download:`codingbat.rst <../code/session02/codingbat.rst>`
+
+Be sure to write a good docstring for your function describing
+how to use it, like this example.
+
+.. nextslide:: Good Function Docstrings
+
+.. code-block:: python
+
+  def square_root(n):
+      """
+      Calculate the square root of a number.
+
+      Args:
+          n: the number to get the square root of.
+      Returns:
+          the square root of n.
+
+      """
+      pass
+
+.. nextslide:: Check if it's Main
+
+Include a check to see if the module is being run,
+or it is being imported.
+
+If it is being run, execute some test code that
+calls your function.
+
+.. nextslide::
+
+Remember, Do These Steps
+
+* Read through the puzzle for that section.
+* Pick a partner. Describe what your goal is.
+* Read through the section `Code Structure, Modules, Namespaces`. Try typing any code you see in `ipython` or `python`
+* Come up with three questions as you are reading with your partner.
+* We'll come around and help you.
+* We'll regroup and you'll teach me the slides.
+* We'll solve the puzzle together.
 
 
 Code Structure
@@ -1284,6 +1438,52 @@ You wouldn't want to import * those!
     os.path.split(u'/foo/bar/baz.txt')
     os.path.join(u'/foo/bar', u'baz.txt')
 
+Module Puzzle Solved
+--------------------
+
+Now we will solve our Module Puzzle!
+
+Write a module (file) called `mystery.py` with a function
+inside that solves one of the CodingBat exercises from
+before:
+
+:download:`codingbat.rst <../code/session02/codingbat.rst>`
+
+Be sure to write a good docstring for your function describing
+how to use it, like this example.
+
+.. nextslide:: Good Function Docstrings
+
+.. code-block:: python
+
+  def square_root(n):
+      """
+      Calculate the square root of a number.
+
+      Args:
+          n: the number to get the square root of.
+      Returns:
+          the square root of n.
+
+      """
+      pass
+
+.. nextslide:: Check if it's Main
+
+Include a check to see if the module is being run,
+or it is being imported.
+
+If it is being run, execute some test code that
+calls your function.
+
+.. nextslide:: Live Demo
+
+Someone upload their file to Slack and volunteer.
+
+I'll go through the process of importing the module,
+and we'll try to figure out what your function does,
+and how to run it.
+
 Homework
 ========
 
@@ -1291,54 +1491,7 @@ Homework
 
 Two Tasks by Monday
 
-Task 1
-------
-
-The Ackermann function, A(m, n), is defined::
-
-    A(m, n) =
-        n+1   if  m = 0
-        A(m−1, 1)   if  m > 0  and  n = 0
-        A(m−1, A(m, n−1))   if  m > 0  and  n > 0.
-
-See http://en.wikipedia.org/wiki/Ackermann_function.
-
-Make a new branch ``session02`` in your repository.  Do your work for this
-session on that branch.
-
-Create a new module called ``ack.py`` in a ``session02`` folder in your student
-folder. In that module, write a function named ``ack`` that performs
-Ackermann's function.
-
-* Write a good ``docstring`` for your function according to PEP 257.
-* Ackermann's function is not defined for input values less than 0.  Validate
-  inputs to your function and return None if they are negative.
-
-.. nextslide::
-
-The wikipedia page provides a table of output values for inputs between 0 and
-4. Using this table, add a ``if __name__ == "__main__":`` block to test your
-function.
-
-Test each pair of inputs for ``m`` between 0 and 3 and ``n`` between 0 and 4.
-Assert that the result produced by your function is the result expected by
-the wikipedia table. What happens for values of ``m`` greater than 3?
-
-When your module is run from the command line, these tests should be executed.
-If they all pass, print "All Tests Pass" as the result.
-
-Add your new module to your git clone and commit frequently while working on
-your implementation. Include good commit messages that explain concisely both
-*what* you are doing and *why*.
-
-When you are finished, push your changes to your fork of the class repository
-in GitHub. Then make a pull request and submit your assignment in Canvas.
-
-::
-
-    - Adapted from "Think Python": Chapter 6, exercise 5.
-
-Task 2
+Task 4
 ------
 
 The `Fibonacci Series`_ is a numeric series starting with the integers 0 and 1.
@@ -1346,6 +1499,8 @@ In this series, the next integer is determined by summing the previous two.
 This gives us::
 
     0, 1, 1, 2, 3, 5, 8, 13, ...
+
+Create a branch in your local repo called `task5` and switch to it (`git checkout task5`).
 
 Create a new module ``series.py`` in the ``session02`` folder in your student folder. In it, add a function called ``fibonacci``. The function should have one parameter ``n``. The function should return the ``nth`` value in the fibonacci series.
 
@@ -1392,9 +1547,54 @@ demonstrate that your three functions work properly.
 
 Use comments in this block to inform the observer what your tests do.
 
-Add your new module to your git clone and commit frequently while working on
+Add your new module to your local repo (on branch `task5`) and commit frequently while working on
 your implementation. Include good commit messages that explain concisely both
 *what* you are doing and *why*.
 
+Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.
+
 When you are finished, push your changes to your fork of the class repository
-in GitHub. Then make a pull request and submit your assignment in Canvas.
+in GitHub.
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
+
+Task 5
+------
+
+Read through the Session 03 slides.
+
+http://codefellows.github.io/sea-c34-python/session03.html
+
+There are three sections:
+
+* Sequences
+* Iteration
+* String Formatting
+
+For each section, come up with three questions and write some
+Python code to help you answer them, one function per question.
+
+For each function, write a good ``docstring`` describing what
+question you are trying to answer.
+
+Put the functions in three separate modules (files) called
+`sequences.py`, `iteration.py`, and `string.py`.
+
+.. nextslide::
+
+That is, you should have nine questions, and nine functions, total,
+spread out across three files.
+
+Use everything you've learned
+so far (including functions, booleans, and printing).
+
+Create a branch in your local repo called `task4` and switch to it (`git checkout task4`).
+
+Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.
+
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
+
+

@@ -76,14 +76,65 @@
 <li>Intro to functions</li>
 </ul>
 </div>
+</div>
+<div class="section" id="clarifications">
+<h2>Clarifications<a class="headerlink" href="#clarifications" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python Development Accelerator</li>
+<li>Blank lines don&#8217;t always end a block</li>
+</ul>
+<div class="section" id="id1">
+<h3>Review of Previous Session<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="build simple">
+<li>Values and Types</li>
+<li>Expressions</li>
+<li>Intro to functions</li>
+</ul>
+</div>
 <div class="section" id="homework-review">
 <h3>Homework Review<a class="headerlink" href="#homework-review" title="Permalink to this headline">¶</a></h3>
 <p class="center large">Any questions that are nagging?</p>
 </div>
 </div>
+<div class="section" id="today-s-plan">
+<h2>Today&#8217;s Plan<a class="headerlink" href="#today-s-plan" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Github Upstream</li>
+<li>Functions</li>
+<li>Booleans</li>
+<li>Modules</li>
+</ul>
+<div class="section" id="for-each-section">
+<h3>For Each Section<a class="headerlink" href="#for-each-section" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Read through the puzzle for that section.</li>
+<li>Pick a partner. Describe what your goal is.</li>
+<li>Read through the section. Try typing any code you see in <cite>ipython</cite> or <cite>python</cite></li>
+<li>Come up with three questions as you are reading with your partner.</li>
+<li>We&#8217;ll come around and help you.</li>
+<li>We&#8217;ll regroup and you&#8217;ll teach me the slides.</li>
+<li>We&#8217;ll solve the puzzle together.</li>
+</ul>
+</div>
+</div>
 <div class="section" id="git-work">
 <h2>Git Work<a class="headerlink" href="#git-work" title="Permalink to this headline">¶</a></h2>
 <p class="center large">Let&#8217;s get to know your fellow students!</p>
+<div class="section" id="git-work-puzzle">
+<h3>Git Work Puzzle<a class="headerlink" href="#git-work-puzzle" title="Permalink to this headline">¶</a></h3>
+<p>We want to pull your classmates &#8220;Gitting to Know You&#8221;
+introductions from the (upstream) class repo.</p>
+<p>Remember, do these steps:</p>
+<ul class="simple">
+<li>Read through the puzzle for that section.</li>
+<li>Pick a partner, describe what your goal is.</li>
+<li>Read through the slides. Try typing any code you see in <cite>ipython</cite> or <cite>python</cite></li>
+<li>Come up with three questions as you are reading with your partner.</li>
+<li>We&#8217;ll come around and help you.</li>
+<li>We&#8217;ll regroup and you&#8217;ll teach me the slides.</li>
+<li>We&#8217;ll solve the puzzle together.</li>
+</ul>
+</div>
 <div class="section" id="working-with-an-upstream">
 <h3>Working with an Upstream<a class="headerlink" href="#working-with-an-upstream" title="Permalink to this headline">¶</a></h3>
 <p>You&#8217;ve created a fork of the class repository from the <tt class="docutils literal"><span class="pre">codefellows</span></tt> account
@@ -99,8 +150,8 @@ repository that serves as the one to rule them all.</p>
 connected to.</p>
 <p>Cloned repositories get an <em>origin</em> remote for free:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote -v
-origin  https://github.com/cewing/sea-c28-students.git <span class="o">(</span>fetch<span class="o">)</span>
-origin  https://github.com/cewing/sea-c28-students.git <span class="o">(</span>push<span class="o">)</span>
+origin  https://github.com/cewing/sea-c34-python.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://github.com/cewing/sea-c34-python.git <span class="o">(</span>push<span class="o">)</span>
 </pre></div>
 </div>
 <p>This shows that the local repo on my machine <em>originated</em> from the one in my gitHub account (the one it was cloned from)</p>
@@ -110,13 +161,13 @@ copies of it in different remote locations.</p>
 locations.</p>
 <p>For our class, we will add an <em>upstream</em> remote to our local copy that points
 to the original copy of the material in the <tt class="docutils literal"><span class="pre">codefellows</span></tt> account.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote add upstream https://github.com/codefellows/sea-c28-students.git
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git remote add upstream https://github.com/codefellows/sea-c34-python.git
 
 <span class="nv">$ </span>git remote -v
-origin  https://github.com/cewing/sea-c28-students.git <span class="o">(</span>fetch<span class="o">)</span>
-origin  https://github.com/cewing/sea-c28-students.git <span class="o">(</span>push<span class="o">)</span>
-upstream  https://github.com/codefellows/sea-c28-students.git <span class="o">(</span>fetch<span class="o">)</span>
-upstream  https://github.com/codefellows/sea-c28-students.git <span class="o">(</span>push<span class="o">)</span>
+origin  https://github.com/cewing/sea-c34-python.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://github.com/cewing/sea-c34-python.git <span class="o">(</span>push<span class="o">)</span>
+upstream  https://github.com/codefellows/sea-c34-python.git <span class="o">(</span>fetch<span class="o">)</span>
+upstream  https://github.com/codefellows/sea-c34-python.git <span class="o">(</span>push<span class="o">)</span>
 </pre></div>
 </div>
 <p>To get the updates from your new remote, you&#8217;ll need first to fetch everything:</p>
@@ -146,7 +197,7 @@ Fetching upstream
 think you are.</p>
 <p>Then, fetch the upstream master branch and merge it into your master:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>git fetch upstream master
-From https://github.com/codefellows/sea-c28-students.git
+From https://github.com/codefellows/sea-c34-python.git
  * branch            master     -&gt; FETCH_HEAD
 
 <span class="nv">$ </span>git merge upstream/master
@@ -187,13 +238,24 @@ $ git push
 </pre></div>
 </div>
 </div>
+<div class="section" id="git-work-puzzle-solved">
+<h3>Git Work Puzzle Solved!<a class="headerlink" href="#git-work-puzzle-solved" title="Permalink to this headline">¶</a></h3>
+<p>We wanted to pull your classmates &#8220;Gitting to Know You&#8221;
+introductions from the (upstream) class repo.</p>
+<p>When you make that happen, congratulations! Find your partner&#8217;s
+introduction and read them to each other.</p>
 </div>
-<div class="section" id="quick-intro-to-basics">
-<h2>Quick Intro to Basics<a class="headerlink" href="#quick-intro-to-basics" title="Permalink to this headline">¶</a></h2>
-<p class="center large">Because there&#8217;s a few things you just gotta have</p>
-<div class="section" id="basics">
-<h3>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h3>
-<p>It turns out you can&#8217;t really do much at all without at least a container type,
+</div>
+<div class="section" id="some-needed-plumbing">
+<h2>Some Needed Plumbing<a class="headerlink" href="#some-needed-plumbing" title="Permalink to this headline">¶</a></h2>
+<p class="center large">Because there&#8217;s a few things you just gotta have:</p>
+<ul class="simple">
+<li>collections</li>
+<li>looping</li>
+</ul>
+<div class="section" id="collections-and-looping">
+<h3>Collections and Looping<a class="headerlink" href="#collections-and-looping" title="Permalink to this headline">¶</a></h3>
+<p>It turns out you can&#8217;t really do much at all without at least a collection (container) type,
 conditionals and looping...</p>
 <p><tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> allow you to make decisions:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="n">a</span><span class="p">:</span>
@@ -218,6 +280,7 @@ conditionals and looping...</p>
     <span class="k">print</span><span class="p">(</span><span class="s">u&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Try it at <a class="reference external" href="http://pythontutor.com">http://pythontutor.com</a></p>
 <p>Many languages have a <tt class="docutils literal"><span class="pre">switch</span></tt> construct:</p>
 <div class="highlight-js"><div class="highlight"><pre><span class="k">switch</span> <span class="p">(</span><span class="nx">expr</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">case</span> <span class="s2">&quot;Oranges&quot;</span><span class="o">:</span>
@@ -264,6 +327,7 @@ conditionals and looping...</p>
 <span class="go">5</span>
 </pre></div>
 </div>
+<p>Try it at <a class="reference external" href="http://pythontutor.com">http://pythontutor.com</a></p>
 <p>Range builds lists of numbers automatically</p>
 <p>Use it when you need to do something a set number of times</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [12]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
@@ -275,6 +339,7 @@ conditionals and looping...</p>
 <span class="go">* * * * * *</span>
 </pre></div>
 </div>
+<p>Try it at <a class="reference external" href="http://pythontutor.com">http://pythontutor.com</a></p>
 <p>This is enough to get you started.</p>
 <p>Each of these have intricacies special to python</p>
 <p>We&#8217;ll get to those over the next couple of classes</p>
@@ -282,6 +347,28 @@ conditionals and looping...</p>
 </div>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="functions-puzzle">
+<h3>Functions Puzzle<a class="headerlink" href="#functions-puzzle" title="Permalink to this headline">¶</a></h3>
+<p>In your local repo, after you&#8217;ve updated from upstream,
+go to <cite>session02</cite> and find the file <cite>stackoverflow.py</cite>.</p>
+<p>In it, you will find a function that calls itself.</p>
+<ul class="simple">
+<li>What problems does this cause?</li>
+<li>Why do you think the problem occurs?</li>
+<li>How can you count the number of times a function can call itself?</li>
+<li>Modify the program to implement your solution.</li>
+</ul>
+<p>Remember, Do These Steps</p>
+<ul class="simple">
+<li>Read through the puzzle for that section.</li>
+<li>Pick a partner. Describe what your goal is.</li>
+<li>Read through the section <cite>Functions</cite>. Try typing any code you see in <cite>ipython</cite> or <cite>python</cite></li>
+<li>Come up with three questions as you are reading with your partner.</li>
+<li>We&#8217;ll come around and help you.</li>
+<li>We&#8217;ll regroup and you&#8217;ll teach me the slides.</li>
+<li>We&#8217;ll solve the puzzle together.</li>
+</ul>
+</div>
 <div class="section" id="review">
 <h3>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h3>
 <p>Defining a function:</p>
@@ -504,26 +591,48 @@ integer by every integer smaller than it down to 1.</p>
 </div>
 <p>We can use a recursive function nicely to model this mathematical function</p>
 </div>
-</div>
-<div class="section" id="in-class-lab">
-<h2>In-Class Lab:<a class="headerlink" href="#in-class-lab" title="Permalink to this headline">¶</a></h2>
-<p class="center large">Fun With Functions</p>
-<div class="section" id="exercises">
-<h3>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h3>
-<p>Try your hand at writing a function that computes the distance between two
-points:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">dist</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span>
-</pre></div>
-</div>
-<p>Experiment with <tt class="docutils literal"><span class="pre">locals</span></tt> by adding this statement to the function you just
-wrote::</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
-</pre></div>
-</div>
+<div class="section" id="functions-puzzle-solved">
+<h3>Functions Puzzle Solved!<a class="headerlink" href="#functions-puzzle-solved" title="Permalink to this headline">¶</a></h3>
+<p>Now it&#8217;s time to solve the puzzle. Remember:</p>
+<p>In your local repo, after you&#8217;ve updated from upstream,
+go to <cite>session02</cite> and find the file <cite>stackoverflow.py</cite>.</p>
+<p>In it, you will find a function that calls itself.</p>
+<ul class="simple">
+<li>What problems does this cause?</li>
+<li>Why do you think the problem occurs?</li>
+<li>How can you count the number of times a function can call itself?</li>
+<li>Modify the program to implement your solution.</li>
+</ul>
 </div>
 </div>
 <div class="section" id="boolean-expressions">
 <h2>Boolean Expressions<a class="headerlink" href="#boolean-expressions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="boolean-puzzle">
+<h3>Boolean Puzzle<a class="headerlink" href="#boolean-puzzle" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Look up the <tt class="docutils literal"><span class="pre">%</span></tt>  operator. What do these do?<ul>
+<li><tt class="docutils literal"><span class="pre">10</span> <span class="pre">%</span> <span class="pre">7</span> <span class="pre">==</span> <span class="pre">3</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">14</span> <span class="pre">%</span> <span class="pre">7</span> <span class="pre">==</span> <span class="pre">0</span></tt></li>
+</ul>
+</li>
+<li>Write a program that prints the numbers from 1 to 100 inclusive. But for
+multiples of three print &#8220;Fizz&#8221; instead of the number and for the multiples
+of five print &#8220;Buzz&#8221;. For numbers which are multiples of both three and five
+print &#8220;FizzBuzz&#8221; instead.</li>
+<li>If you finish that, try your hand at writing solutions to one or more of the
+problems in <a class="reference download internal" href="_downloads/codingbat.rst"><tt class="xref download docutils literal"><span class="pre">codingbat.rst</span></tt></a></li>
+</ul>
+<p>Remember, Do These Steps</p>
+<ul class="simple">
+<li>Read through the puzzle for that section.</li>
+<li>Pick a partner. Describe what your goal is.</li>
+<li>Read through the section <cite>Booleans</cite>. Try typing any code you see in <cite>ipython</cite> or <cite>python</cite></li>
+<li>Come up with three questions as you are reading with your partner.</li>
+<li>We&#8217;ll come around and help you.</li>
+<li>We&#8217;ll regroup and you&#8217;ll teach me the slides.</li>
+<li>We&#8217;ll solve the puzzle together.</li>
+</ul>
+</div>
 <div class="section" id="truthiness">
 <h3>Truthiness<a class="headerlink" href="#truthiness" title="Permalink to this headline">¶</a></h3>
 <p>What is true or false in Python?</p>
@@ -663,12 +772,9 @@ not x               return True,
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="id1">
-<h2>In-Class Lab:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p class="center large">Better With Booleans</p>
-<div class="section" id="id2">
-<h3>Exercises<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="boolean-puzzle-solved">
+<h3>Boolean Puzzle Solved<a class="headerlink" href="#boolean-puzzle-solved" title="Permalink to this headline">¶</a></h3>
+<p>Remember our puzzle:</p>
 <ul class="simple">
 <li>Look up the <tt class="docutils literal"><span class="pre">%</span></tt>  operator. What do these do?<ul>
 <li><tt class="docutils literal"><span class="pre">10</span> <span class="pre">%</span> <span class="pre">7</span> <span class="pre">==</span> <span class="pre">3</span></tt></li>
@@ -682,11 +788,48 @@ print &#8220;FizzBuzz&#8221; instead.</li>
 <li>If you finish that, try your hand at writing solutions to one or more of the
 problems in <a class="reference download internal" href="_downloads/codingbat.rst"><tt class="xref download docutils literal"><span class="pre">codingbat.rst</span></tt></a></li>
 </ul>
+<p>Volunteer to upload your solution to Slack!</p>
 </div>
 </div>
 <div class="section" id="code-structure-modules-and-namespaces">
 <h2>Code Structure, Modules, and Namespaces<a class="headerlink" href="#code-structure-modules-and-namespaces" title="Permalink to this headline">¶</a></h2>
-<p class="center large">How to get what you want when you want it.</p>
+<p class="center large">Scopes within scopes, attributes within attributes</p>
+<div class="section" id="module-puzzle">
+<h3>Module Puzzle<a class="headerlink" href="#module-puzzle" title="Permalink to this headline">¶</a></h3>
+<p>Write a module (file) called <cite>mystery.py</cite> with a function
+inside that solves one of the CodingBat exercises from
+before:</p>
+<p><a class="reference download internal" href="_downloads/codingbat.rst"><tt class="xref download docutils literal"><span class="pre">codingbat.rst</span></tt></a></p>
+<p>Be sure to write a good docstring for your function describing
+how to use it, like this example.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">square_root</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the square root of a number.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        n: the number to get the square root of.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        the square root of n.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Include a check to see if the module is being run,
+or it is being imported.</p>
+<p>If it is being run, execute some test code that
+calls your function.</p>
+<p>Remember, Do These Steps</p>
+<ul class="simple">
+<li>Read through the puzzle for that section.</li>
+<li>Pick a partner. Describe what your goal is.</li>
+<li>Read through the section <cite>Code Structure, Modules, Namespaces</cite>. Try typing any code you see in <cite>ipython</cite> or <cite>python</cite></li>
+<li>Come up with three questions as you are reading with your partner.</li>
+<li>We&#8217;ll come around and help you.</li>
+<li>We&#8217;ll regroup and you&#8217;ll teach me the slides.</li>
+<li>We&#8217;ll solve the puzzle together.</li>
+</ul>
+</div>
 <div class="section" id="code-structure">
 <h3>Code Structure<a class="headerlink" href="#code-structure" title="Permalink to this headline">¶</a></h3>
 <p>In Python, the structure of your code is determined by whitespace.</p>
@@ -833,11 +976,11 @@ your code.</p>
 </div>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>In-Class Lab<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="in-class-lab">
+<h2>In-Class Lab<a class="headerlink" href="#in-class-lab" title="Permalink to this headline">¶</a></h2>
 <p class="center large">Import Interactions</p>
-<div class="section" id="id5">
-<h3>Exercises<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="exercises">
+<h3>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h3>
 <p>Experiment with importing different ways:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [3]: </span><span class="kn">import</span> <span class="nn">math</span>
 
@@ -880,55 +1023,50 @@ your code.</p>
 </pre></div>
 </div>
 </div>
+<div class="section" id="module-puzzle-solved">
+<h3>Module Puzzle Solved<a class="headerlink" href="#module-puzzle-solved" title="Permalink to this headline">¶</a></h3>
+<p>Now we will solve our Module Puzzle!</p>
+<p>Write a module (file) called <cite>mystery.py</cite> with a function
+inside that solves one of the CodingBat exercises from
+before:</p>
+<p><a class="reference download internal" href="_downloads/codingbat.rst"><tt class="xref download docutils literal"><span class="pre">codingbat.rst</span></tt></a></p>
+<p>Be sure to write a good docstring for your function describing
+how to use it, like this example.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">square_root</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the square root of a number.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        n: the number to get the square root of.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        the square root of n.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Include a check to see if the module is being run,
+or it is being imported.</p>
+<p>If it is being run, execute some test code that
+calls your function.</p>
+<p>Someone upload their file to Slack and volunteer.</p>
+<p>I&#8217;ll go through the process of importing the module,
+and we&#8217;ll try to figure out what your function does,
+and how to run it.</p>
+</div>
 </div>
 <div class="section" id="homework">
 <h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">¶</a></h2>
 <p class="center large">Two Tasks by Monday</p>
-<div class="section" id="task-1">
-<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this headline">¶</a></h3>
-<p>The Ackermann function, A(m, n), is defined:</p>
-<div class="highlight-python"><div class="highlight"><pre>A(m, n) =
-    n+1   if  m = 0
-    A(m−1, 1)   if  m &gt; 0  and  n = 0
-    A(m−1, A(m, n−1))   if  m &gt; 0  and  n &gt; 0.
-</pre></div>
-</div>
-<p>See <a class="reference external" href="http://en.wikipedia.org/wiki/Ackermann_function">http://en.wikipedia.org/wiki/Ackermann_function</a>.</p>
-<p>Make a new branch <tt class="docutils literal"><span class="pre">session02</span></tt> in your repository.  Do your work for this
-session on that branch.</p>
-<p>Create a new module called <tt class="docutils literal"><span class="pre">ack.py</span></tt> in a <tt class="docutils literal"><span class="pre">session02</span></tt> folder in your student
-folder. In that module, write a function named <tt class="docutils literal"><span class="pre">ack</span></tt> that performs
-Ackermann&#8217;s function.</p>
-<ul class="simple">
-<li>Write a good <tt class="docutils literal"><span class="pre">docstring</span></tt> for your function according to PEP 257.</li>
-<li>Ackermann&#8217;s function is not defined for input values less than 0.  Validate
-inputs to your function and return None if they are negative.</li>
-</ul>
-<p>The wikipedia page provides a table of output values for inputs between 0 and
-4. Using this table, add a <tt class="docutils literal"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">&quot;__main__&quot;:</span></tt> block to test your
-function.</p>
-<p>Test each pair of inputs for <tt class="docutils literal"><span class="pre">m</span></tt> between 0 and 3 and <tt class="docutils literal"><span class="pre">n</span></tt> between 0 and 4.
-Assert that the result produced by your function is the result expected by
-the wikipedia table. What happens for values of <tt class="docutils literal"><span class="pre">m</span></tt> greater than 3?</p>
-<p>When your module is run from the command line, these tests should be executed.
-If they all pass, print &#8220;All Tests Pass&#8221; as the result.</p>
-<p>Add your new module to your git clone and commit frequently while working on
-your implementation. Include good commit messages that explain concisely both
-<em>what</em> you are doing and <em>why</em>.</p>
-<p>When you are finished, push your changes to your fork of the class repository
-in GitHub. Then make a pull request and submit your assignment in Canvas.</p>
-<div class="highlight-python"><div class="highlight"><pre>- Adapted from &quot;Think Python&quot;: Chapter 6, exercise 5.
-</pre></div>
-</div>
-</div>
-<div class="section" id="task-2">
-<h3>Task 2<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-4">
+<h3>Task 4<a class="headerlink" href="#task-4" title="Permalink to this headline">¶</a></h3>
 <p>The <a class="reference external" href="http://en.wikipedia.org/wiki/Fibbonaci_Series">Fibonacci Series</a> is a numeric series starting with the integers 0 and 1.
 In this series, the next integer is determined by summing the previous two.
 This gives us:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="o">...</span>
 </pre></div>
 </div>
+<p>Create a branch in your local repo called <cite>task5</cite> and switch to it (<cite>git checkout task5</cite>).</p>
 <p>Create a new module <tt class="docutils literal"><span class="pre">series.py</span></tt> in the <tt class="docutils literal"><span class="pre">session02</span></tt> folder in your student folder. In it, add a function called <tt class="docutils literal"><span class="pre">fibonacci</span></tt>. The function should have one parameter <tt class="docutils literal"><span class="pre">n</span></tt>. The function should return the <tt class="docutils literal"><span class="pre">nth</span></tt> value in the fibonacci series.</p>
 <p>Ensure that your function has a well-formed <tt class="docutils literal"><span class="pre">docstring</span></tt></p>
 <p>The <a class="reference external" href="http://en.wikipedia.org/wiki/Lucas_number">Lucas Numbers</a> are a related series of integers that start with the
@@ -954,11 +1092,41 @@ parameters will produce other series.</p>
 module. Use the block to write a series of <tt class="docutils literal"><span class="pre">assert</span></tt> statements that
 demonstrate that your three functions work properly.</p>
 <p>Use comments in this block to inform the observer what your tests do.</p>
-<p>Add your new module to your git clone and commit frequently while working on
+<p>Add your new module to your local repo (on branch <cite>task5</cite>) and commit frequently while working on
 your implementation. Include good commit messages that explain concisely both
 <em>what</em> you are doing and <em>why</em>.</p>
+<p>Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.</p>
 <p>When you are finished, push your changes to your fork of the class repository
-in GitHub. Then make a pull request and submit your assignment in Canvas.</p>
+in GitHub.
+Finally, submit your assignment in Canvas by giving the URL of the pull request.</p>
+</div>
+<div class="section" id="task-5">
+<h3>Task 5<a class="headerlink" href="#task-5" title="Permalink to this headline">¶</a></h3>
+<p>Read through the Session 03 slides.</p>
+<p><a class="reference external" href="http://codefellows.github.io/sea-c34-python/session03.html">http://codefellows.github.io/sea-c34-python/session03.html</a></p>
+<p>There are three sections:</p>
+<ul class="simple">
+<li>Sequences</li>
+<li>Iteration</li>
+<li>String Formatting</li>
+</ul>
+<p>For each section, come up with three questions and write some
+Python code to help you answer them, one function per question.</p>
+<p>For each function, write a good <tt class="docutils literal"><span class="pre">docstring</span></tt> describing what
+question you are trying to answer.</p>
+<p>Put the functions in three separate modules (files) called
+<cite>sequences.py</cite>, <cite>iteration.py</cite>, and <cite>string.py</cite>.</p>
+<p>That is, you should have nine questions, and nine functions, total,
+spread out across three files.</p>
+<p>Use everything you&#8217;ve learned
+so far (including functions, booleans, and printing).</p>
+<p>Create a branch in your local repo called <cite>task4</cite> and switch to it (<cite>git checkout task4</cite>).</p>
+<p>Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.</p>
+<p>Finally, submit your assignment in Canvas by giving the URL of the pull request.</p>
 </div>
 </div>
 </div>
@@ -974,52 +1142,60 @@ in GitHub. Then make a pull request and submit your assignment in Canvas.</p>
 <li><a class="reference internal" href="#">Session Two: Functions, Booleans and Modules</a><ul>
 <li><a class="reference internal" href="#review-questions">Review/Questions</a><ul>
 <li><a class="reference internal" href="#review-of-previous-session">Review of Previous Session</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clarifications">Clarifications</a><ul>
+<li><a class="reference internal" href="#id1">Review of Previous Session</a></li>
 <li><a class="reference internal" href="#homework-review">Homework Review</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#git-work">Git Work</a><ul>
-<li><a class="reference internal" href="#working-with-an-upstream">Working with an Upstream</a></li>
+<li><a class="reference internal" href="#today-s-plan">Today&#8217;s Plan</a><ul>
+<li><a class="reference internal" href="#for-each-section">For Each Section</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#quick-intro-to-basics">Quick Intro to Basics</a><ul>
-<li><a class="reference internal" href="#basics">Basics</a></li>
+<li><a class="reference internal" href="#git-work">Git Work</a><ul>
+<li><a class="reference internal" href="#git-work-puzzle">Git Work Puzzle</a></li>
+<li><a class="reference internal" href="#working-with-an-upstream">Working with an Upstream</a></li>
+<li><a class="reference internal" href="#git-work-puzzle-solved">Git Work Puzzle Solved!</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#some-needed-plumbing">Some Needed Plumbing</a><ul>
+<li><a class="reference internal" href="#collections-and-looping">Collections and Looping</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#functions">Functions</a><ul>
+<li><a class="reference internal" href="#functions-puzzle">Functions Puzzle</a></li>
 <li><a class="reference internal" href="#review">Review</a></li>
 <li><a class="reference internal" href="#local-vs-global">Local vs. Global</a></li>
 <li><a class="reference internal" href="#parameters">Parameters</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a></li>
 <li><a class="reference internal" href="#recursion">Recursion</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#in-class-lab">In-Class Lab:</a><ul>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#functions-puzzle-solved">Functions Puzzle Solved!</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#boolean-expressions">Boolean Expressions</a><ul>
+<li><a class="reference internal" href="#boolean-puzzle">Boolean Puzzle</a></li>
 <li><a class="reference internal" href="#truthiness">Truthiness</a></li>
 <li><a class="reference internal" href="#and-or-and-not">and, or and not</a></li>
 <li><a class="reference internal" href="#boolean-return-values">Boolean Return Values</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id1">In-Class Lab:</a><ul>
-<li><a class="reference internal" href="#id2">Exercises</a></li>
+<li><a class="reference internal" href="#boolean-puzzle-solved">Boolean Puzzle Solved</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#code-structure-modules-and-namespaces">Code Structure, Modules, and Namespaces</a><ul>
+<li><a class="reference internal" href="#module-puzzle">Module Puzzle</a></li>
 <li><a class="reference internal" href="#code-structure">Code Structure</a></li>
 <li><a class="reference internal" href="#modules-and-packages">Modules and Packages</a></li>
 <li><a class="reference internal" href="#import">Import</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id4">In-Class Lab</a><ul>
-<li><a class="reference internal" href="#id5">Exercises</a></li>
+<li><a class="reference internal" href="#in-class-lab">In-Class Lab</a><ul>
+<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#module-puzzle-solved">Module Puzzle Solved</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#homework">Homework</a><ul>
-<li><a class="reference internal" href="#task-1">Task 1</a></li>
-<li><a class="reference internal" href="#task-2">Task 2</a></li>
+<li><a class="reference internal" href="#task-4">Task 4</a></li>
+<li><a class="reference internal" href="#task-5">Task 5</a></li>
 </ul>
 </li>
 </ul>
