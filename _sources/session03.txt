@@ -1477,12 +1477,15 @@ allowing you to bind that input to a symbol.
 Homework
 ========
 
-Task 1
+Task 6
 ------
 
 **List Lab** (after http://www.upriss.org.uk/python/session5.html)
 
-In your student folder, create a new file called ``list_lab.py``.
+In your student folder, create a subdirectory called ``session03``.
+Create a new branch called ``task6`` and switch to it (``git checkout task6``).
+
+Within the ``session03`` subdirectory, create a new file called ``list_lab.py``.
 
 The file should be an executable python script. That is to say that one
 should be able to run the script directly like so:
@@ -1545,40 +1548,13 @@ Once more, using the list from series 1:
 - Delete the last item of the original list. Display the original list and the
   copy.
 
+Commit and push to the ``task6`` branch, then submit a pull request to
+the main class repo.
 
-Task 2
-------
-
-**ROT13**
-
-The ROT13 encryption scheme is a simple substitution cypher where each letter
-in a text is replace by the letter 13 away from it (imagine the alphabet as a
-circle, so it wraps around).
-
-Add a python module named ``rot13.py`` to your student folder. This module
-should provide at least one function called ``rot13`` that takes any amount of
-text and returns that same text encrypted by ROT13.
-
-This function should preserve whitespace, punctuation and capitalization.
-
-Your module should include an ``if __name__ == '__main__':`` block with tests
-that demonstrate that your ``rot13`` function and any helper functions you add
-work properly.
-
-.. nextslide:: A bit more
-
-There is a "short-cut" available that will help you accomplish this task. Some
-spelunking in `the documentation for strings`_ should help you to find it. If
-you do find it, using it is completely fair game.
-
-.. _the documentation for strings: https://docs.python.org/2/library/stdtypes.html#string-methods
-
-As usual, add your new file to your local clone right away.  Make commits early and often and include commit messages that are descriptive and concise.
-
-When you are done, push your changes to github and issue a pull request.
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
 
 
-Task 3
+Task 7
 ------
 
 **Mail Room**
@@ -1683,3 +1659,45 @@ a screenshot of your flow chart to the submission page in canvas.
 We will discuss the implementation of this program in more detail during
 session 4, so make sure you think this through so you can participate in that
 discussion.
+
+Task 8
+------
+
+Read through the Session 04 slides.
+
+http://codefellows.github.io/sea-c34-python/session04.html
+
+There are four sections. For each one, come up with the following
+numbers of questions.
+
+* Dictionaries and Sets (4 questions)
+* Exceptions (2 questions)
+* File Reading and Writing (2 questions)
+* Paths (1 question)
+
+Write some
+Python code to help you answer them, one function per question.
+
+For each function, write a good ``docstring`` describing what
+question you are trying to answer.
+
+Put the functions in four separate modules (files) called
+`dictionaries.py`, `exceptions.py`, `files.py`, `paths.py` in the
+``session04`` subdirectory of your student directory, just as
+you did for ``list_lab.py`` up above.
+
+.. nextslide::
+
+That is, you should have nine questions, and nine functions, total,
+spread out across four files.
+
+Use everything you've learned
+so far (including lists, tuples, slicing, iteration, functions, booleans, and printing).
+
+Create a branch in your local repo called `task8` and switch to it (`git checkout task8`).
+
+Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.
+
+Finally, submit your assignment in Canvas by giving the URL of the pull request.

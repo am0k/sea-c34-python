@@ -1108,10 +1108,12 @@ allowing you to bind that input to a symbol.</p>
 </div>
 <div class="section" id="homework">
 <h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="task-1">
-<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-6">
+<h3>Task 6<a class="headerlink" href="#task-6" title="Permalink to this headline">¶</a></h3>
 <p><strong>List Lab</strong> (after <a class="reference external" href="http://www.upriss.org.uk/python/session5.html">http://www.upriss.org.uk/python/session5.html</a>)</p>
-<p>In your student folder, create a new file called <tt class="docutils literal"><span class="pre">list_lab.py</span></tt>.</p>
+<p>In your student folder, create a subdirectory called <tt class="docutils literal"><span class="pre">session03</span></tt>.
+Create a new branch called <tt class="docutils literal"><span class="pre">task6</span></tt> and switch to it (<tt class="docutils literal"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">task6</span></tt>).</p>
+<p>Within the <tt class="docutils literal"><span class="pre">session03</span></tt> subdirectory, create a new file called <tt class="docutils literal"><span class="pre">list_lab.py</span></tt>.</p>
 <p>The file should be an executable python script. That is to say that one
 should be able to run the script directly like so:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>./list_lab.py
@@ -1160,28 +1162,12 @@ of those two values (a while loop is good here):</li>
 <li>Delete the last item of the original list. Display the original list and the
 copy.</li>
 </ul>
+<p>Commit and push to the <tt class="docutils literal"><span class="pre">task6</span></tt> branch, then submit a pull request to
+the main class repo.</p>
+<p>Finally, submit your assignment in Canvas by giving the URL of the pull request.</p>
 </div>
-<div class="section" id="task-2">
-<h3>Task 2<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h3>
-<p><strong>ROT13</strong></p>
-<p>The ROT13 encryption scheme is a simple substitution cypher where each letter
-in a text is replace by the letter 13 away from it (imagine the alphabet as a
-circle, so it wraps around).</p>
-<p>Add a python module named <tt class="docutils literal"><span class="pre">rot13.py</span></tt> to your student folder. This module
-should provide at least one function called <tt class="docutils literal"><span class="pre">rot13</span></tt> that takes any amount of
-text and returns that same text encrypted by ROT13.</p>
-<p>This function should preserve whitespace, punctuation and capitalization.</p>
-<p>Your module should include an <tt class="docutils literal"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></tt> block with tests
-that demonstrate that your <tt class="docutils literal"><span class="pre">rot13</span></tt> function and any helper functions you add
-work properly.</p>
-<p>There is a &#8220;short-cut&#8221; available that will help you accomplish this task. Some
-spelunking in <a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#string-methods">the documentation for strings</a> should help you to find it. If
-you do find it, using it is completely fair game.</p>
-<p>As usual, add your new file to your local clone right away.  Make commits early and often and include commit messages that are descriptive and concise.</p>
-<p>When you are done, push your changes to github and issue a pull request.</p>
-</div>
-<div class="section" id="task-3">
-<h3>Task 3<a class="headerlink" href="#task-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-7">
+<h3>Task 7<a class="headerlink" href="#task-7" title="Permalink to this headline">¶</a></h3>
 <p><strong>Mail Room</strong></p>
 <p>This is an abstract task. Given a list of goals for a software project, you
 create a plan for completing these goals. After next session, you&#8217;ll program
@@ -1266,6 +1252,36 @@ a screenshot of your flow chart to the submission page in canvas.</p>
 session 4, so make sure you think this through so you can participate in that
 discussion.</p>
 </div>
+<div class="section" id="task-8">
+<h3>Task 8<a class="headerlink" href="#task-8" title="Permalink to this headline">¶</a></h3>
+<p>Read through the Session 04 slides.</p>
+<p><a class="reference external" href="http://codefellows.github.io/sea-c34-python/session04.html">http://codefellows.github.io/sea-c34-python/session04.html</a></p>
+<p>There are four sections. For each one, come up with the following
+numbers of questions.</p>
+<ul class="simple">
+<li>Dictionaries and Sets (4 questions)</li>
+<li>Exceptions (2 questions)</li>
+<li>File Reading and Writing (2 questions)</li>
+<li>Paths (1 question)</li>
+</ul>
+<p>Write some
+Python code to help you answer them, one function per question.</p>
+<p>For each function, write a good <tt class="docutils literal"><span class="pre">docstring</span></tt> describing what
+question you are trying to answer.</p>
+<p>Put the functions in four separate modules (files) called
+<cite>dictionaries.py</cite>, <cite>exceptions.py</cite>, <cite>files.py</cite>, <cite>paths.py</cite> in the
+<tt class="docutils literal"><span class="pre">session04</span></tt> subdirectory of your student directory, just as
+you did for <tt class="docutils literal"><span class="pre">list_lab.py</span></tt> up above.</p>
+<p>That is, you should have nine questions, and nine functions, total,
+spread out across four files.</p>
+<p>Use everything you&#8217;ve learned
+so far (including lists, tuples, slicing, iteration, functions, booleans, and printing).</p>
+<p>Create a branch in your local repo called <cite>task8</cite> and switch to it (<cite>git checkout task8</cite>).</p>
+<p>Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.</p>
+<p>Finally, submit your assignment in Canvas by giving the URL of the pull request.</p>
+</div>
 </div>
 </div>
 
@@ -1330,9 +1346,9 @@ discussion.</p>
 </li>
 <li><a class="reference internal" href="#one-last-trick">One Last Trick</a></li>
 <li><a class="reference internal" href="#homework">Homework</a><ul>
-<li><a class="reference internal" href="#task-1">Task 1</a></li>
-<li><a class="reference internal" href="#task-2">Task 2</a></li>
-<li><a class="reference internal" href="#task-3">Task 3</a></li>
+<li><a class="reference internal" href="#task-6">Task 6</a></li>
+<li><a class="reference internal" href="#task-7">Task 7</a></li>
+<li><a class="reference internal" href="#task-8">Task 8</a></li>
 </ul>
 </li>
 </ul>
